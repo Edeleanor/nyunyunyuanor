@@ -1,0 +1,83 @@
+@keyframes twitch {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.02);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+      }
+      50% {
+        transform: rotate(360deg)
+      }
+      100% {
+        transform: rotate(360deg)
+      }
+}
+
+.cat-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    gap: 2rem;
+}
+
+img {
+    border-radius: 0.6rem;
+}
+
+button {
+    background: none;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button p {
+    -webkit-text-stroke: 0.2px rgb(255, 255, 255);
+    background: -webkit-linear-gradient(rgb(185, 63, 255), #c772f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+button img {
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.cat-quote {
+    font-size: 2rem;
+    animation: twitch 1s ease-in-out infinite;
+}
+
+.btn-box {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.refresh-btn {
+    border-radius: 50%;
+}
